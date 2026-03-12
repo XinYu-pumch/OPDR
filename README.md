@@ -1,7 +1,7 @@
 # Open Pubmed Deep Research
 
 **Open Pubmed Deep Research（OPDR）** 是一个面向生物医学文献综述场景的桌面应用。  
-它把 **PubMed 检索、全文获取、PDF 转 Markdown、向量化、RAG 写作、导出成品** 串成了一条完整流水线。
+集合**PubMed 检索、全文获取、PDF 转 Markdown、向量化、RAG 写作、导出成品**等功能
 
 适合的使用场景：
 
