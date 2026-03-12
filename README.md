@@ -48,7 +48,7 @@
 导出的 HTML 综述支持目录导航，并可点击正文中的 PMID 查看该引用在当前章节中对应的素材上下文，便于人工核查。
 
 <p align="center">
-  <img src="https://github.com/XinYu-pumch/OPDR/blob/main/review.png" alt="综述展示" width="100%">
+  <img src="https://github.com/XinYu-pumch/OPDR/blob/main/review2.png" alt="综述展示" width="100%">
 </p>
 
 完整示例可下载后查看（https://github.com/XinYu-pumch/OPDR/blob/main/Igg4RD.html）
