@@ -23,7 +23,7 @@
 ## 软件界面
 
 <p align="center">
-  <img src="[./软件界面.png](https://github.com/XinYu-pumch/OPDR/blob/main/gui.png)" alt="软件界面" width="100%">
+  <img src="https://github.com/XinYu-pumch/OPDR/blob/main/gui.png" alt="软件界面" width="100%">
 </p>
 
 <p align="center"><em>工作区、设置面板与实时日志集中在一个桌面应用中。</em></p>
