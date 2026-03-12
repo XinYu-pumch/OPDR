@@ -94,14 +94,14 @@
 - `Base URL` 建议填写到 `/v1`
 - 推荐使用长上下文模型，以提升框架生成和章节写作效果
   - 推荐模型：gemini2.5 pro、gemini3.0pro、gemini3.1pro
-  - 推荐中转服务商：https://poloai.top（需gmail注册）
+  - 推荐中转服务商：`https://poloai.top` （需gmail注册）
 
 #### Embedding
 
 - 用于向量化和 RAG 检索
 - 仓库默认示例为 `SiliconFlow` 的 embedding 接口
 - 默认示例模型是 `Pro/BAAI/bge-m3`
-  - 推荐“硅基流动（SiliconFlow）”的嵌入模型（https://docs.siliconflow.cn/cn/userguide/introduction）
+  - 推荐“硅基流动（SiliconFlow）”的嵌入模型：`https://docs.siliconflow.cn/cn/userguide/introduction`
 
 使用建议：
 
