@@ -51,7 +51,7 @@
   <img src="https://github.com/XinYu-pumch/OPDR/blob/main/review2.png" alt="综述展示" width="100%">
 </p>
 
-完整示例可下载后查看（https://github.com/XinYu-pumch/OPDR/blob/main/Igg4RD.html）
+完整示例可下载后查看：https://github.com/XinYu-pumch/OPDR/blob/main/Igg4RD.html
 
 ## 支持平台
 
