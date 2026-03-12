@@ -69,7 +69,8 @@
 2. 解压得到Open Pubmed Deep Research.app（可移动到“应用程序中”）
 3. 启动应用
 4. 首次启动时选择**工作区目录**
-备注：若打开失败，打开终端，输入"sudo xattr -rd com.apple.quarantine"，然后将应用拖入该代码后，得到类似“sudo xattr -rd com.apple.quarantine /Applications/应用名称.app”，输入开机密码以清除隔离属性
+
+备注：若打开失败，打开终端，输入"sudo xattr -rd com.apple.quarantine"，然后将应用拖入该代码后方——即执行“sudo xattr -rd com.apple.quarantine /Applications/应用名称.app”指令，输入开机密码以清除隔离属性
 
 说明：
 
