@@ -23,7 +23,7 @@
 ## 软件界面
 
 <p align="center">
-  <img src="./软件界面.png" alt="软件界面" width="100%">
+  <img src="[./软件界面.png](https://github.com/XinYu-pumch/OPDR/blob/main/gui.png)" alt="软件界面" width="100%">
 </p>
 
 <p align="center"><em>工作区、设置面板与实时日志集中在一个桌面应用中。</em></p>
@@ -40,7 +40,7 @@
 6. 按章节做 RAG 检索与填充，生成可导出的完整综述。
 
 <p align="center">
-  <img src="./实现原理.png" alt="实现原理" width="100%">
+  <img src="https://github.com/XinYu-pumch/OPDR/blob/main/flow_chart.png" alt="实现原理" width="100%">
 </p>
 
 ## 生成效果
@@ -59,7 +59,7 @@
 
 ## 下载与安装
 
-面向普通用户时，建议通过仓库的 `Releases` 页面分发 `.dmg` 安装包。
+面向普通用户时，建议通过仓库的 `Releases` 页面获取安装包（解压得到app文件）。
 
 典型安装流程：
 
