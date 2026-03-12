@@ -59,14 +59,15 @@
 
 ## 下载与安装
 
-面向普通用户时，建议通过仓库的 `Releases` 页面获取安装包（解压得到app文件）。
+面向普通用户时，建议通过仓库的 `Releases` 页面获取压缩包（解压得到app文件）。
 
 典型安装流程：
 
-1. 下载最新的 `Open_Pubmed_Deep_Research-*.dmg`
-2. 打开镜像并拖入 `Applications`
+1. 下载最新的 `Open Pubmed Deep Research.zip`
+2. 解压得到Open Pubmed Deep Research.app（可移动到“应用程序中”）
 3. 启动应用
-4. 首次启动时选择工作区目录
+4. 首次启动时选择**工作区目录**
+备注：若打开失败，打开终端，输入"sudo xattr -rd com.apple.quarantine"，然后将应用拖入该代码后，得到类似“sudo xattr -rd com.apple.quarantine /Applications/应用名称.app”，输入开机密码以清除隔离属性
 
 说明：
 
@@ -89,12 +90,15 @@
 - 目前按代码实现，LLM 接口需要兼容 OpenAI 风格
 - `Base URL` 建议填写到 `/v1`
 - 推荐使用长上下文模型，以提升框架生成和章节写作效果
+  - 推荐模型：gemini2.5 pro、gemini3.0pro、gemini3.1pro
+  - 推荐中转服务商：https://poloai.top（需gmail注册）
 
 #### Embedding
 
 - 用于向量化和 RAG 检索
 - 仓库默认示例为 `SiliconFlow` 的 embedding 接口
 - 默认示例模型是 `Pro/BAAI/bge-m3`
+  - 推荐“硅基流动（SiliconFlow）”的嵌入模型（https://docs.siliconflow.cn/cn/userguide/introduction）
 
 使用建议：
 
@@ -143,26 +147,26 @@
 
 说明：
 
-- 当前代码里文件名拼写就是 `reveiw_framework.csv`
+- 当前代码里文件名拼写就是 `reveiw_framework.csv`（错别词，暂不修正）
 - 如果结果不满意，可以重新生成，或手动编辑该 CSV
-- 手动编辑时请保持列结构不变
+- 手动编辑时请保持列结构及列名不变
 
 ### 4. 下载全文
 
-这是比较耗时的一步。
+限速步骤。
 
 下载策略：
 
-- 有 `PMCID` 的文献优先尝试从 Europe PMC 获取 PDF
+- 有 `PMCID` 的文献优先尝试从PMC 获取 PDF
 - 其他文献尝试通过 Sci-Hub 镜像下载
 - 如果获取不到 PDF，则自动生成摘要 `.md` 作为兜底材料
 
-可能产物：
+下载所得：
 
-- `*.pdf`
-- `*.md`
-- `literature_without_pdf.txt`
-- `downloaded_literature.zip`
+- `*.pdf` （以pmid命名的文献pdf原文）
+- `*.md` （以pmid命名的文献md摘要）
+- `literature_without_pdf.txt` （未获取到原文pdf的文献pmid list）
+- `downloaded_literature.zip` （所有下载的文献原文或摘要打包）
 
 ### 5. Markdown 转化
 
@@ -257,20 +261,7 @@
 - 如果某些文献没有 PDF，不代表这篇文献完全无法参与写作；摘要 `.md` 仍可继续进入后续流程。
 - 生成结果依赖你配置的 LLM、Embedding、检索规模和框架质量，正式使用前仍建议人工复核。
 
-## 开发模式运行
 
-如果你希望从源码启动项目，可在仓库根目录执行：
-
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
-
-也可以运行桌面壳：
-
-```bash
-python desktop_app.py
-```
 
 ## 已知限制
 
